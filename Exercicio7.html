@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aparição e Mudança de Cor</title>
+<link rel="stylesheet" href="main.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .square {
+        width: 0;
+        height: 0;
+        background-color: #007bff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: appearAndChangeColor 4s ease forwards;
+    }
+
+    @keyframes appearAndChangeColor {
+        0% {
+            width: 0;
+            height: 0;
+            background-color: #007bff;
+        }
+        50% {
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+        }
+        100% {
+            width: 200px;
+            height: 200px;
+            background-color: #00ff00;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="square"></div>
+    <div class="container1">
+        <h1></h1>
+        <ul class="menu">
+            <li><a href="Projeto 01.html">Voltar</a></li>
+        </ul>
+    </div>
+</body>
+</html>
